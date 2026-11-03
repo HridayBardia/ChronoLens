@@ -48,7 +48,10 @@ export default function ChronoLensWorkstation() {
         setActivePhase("3/3 ENFORCING PYDANTIC STRUCTURAL SYNTHESIS...");
       }, 1400);
 
-      const res = await fetch("http://localhost:8000/api/v1/compare", {
+      const apiBase = process.env.NEXT_PUBLIC_API_URL || "";
+      const endpoint = `${apiBase}/api/v1/compare`;
+
+      const res = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
