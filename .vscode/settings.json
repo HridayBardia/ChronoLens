@@ -1,0 +1,26 @@
+{
+  "python.analysis.exclude": [
+    "**/backend/venv/**",
+    "**/frontend/node_modules/**",
+    "**/.next/**"
+  ],
+  "python.analysis.ignore": [
+    "**/backend/venv/**"
+  ],
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/venv/Scripts/python.exe",
+  "files.watcherExclude": {
+    "**/backend/venv/**": true,
+    "**/frontend/node_modules/**": true,
+    "**/.next/**": true
+  },
+  "search.exclude": {
+    "**/backend/venv/**": true,
+    "**/frontend/node_modules/**": true,
+    "**/.next/**": true
+  },
+  "flake8.args": [
+    "--max-line-length=120",
+    "--extend-ignore=E203,W503,E501"
+  ]
+}
+
