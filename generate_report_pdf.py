@@ -1428,8 +1428,8 @@ def generate_pdf(filename="ChronoLens_Project_Report.pdf"):
     
     # PASS 2: Generate the final publication PDF with exact index page numbers
     print(f"Pass 2: Building final publication-grade report -> {filename}...")
-    story2 = generate_story(styles, pass_idx=2)
     try:
+        story2 = generate_story(styles, pass_idx=2)
         doc2 = SimpleDocTemplate(
             filename,
             pagesize=A4,
@@ -1442,6 +1442,7 @@ def generate_pdf(filename="ChronoLens_Project_Report.pdf"):
     except PermissionError:
         alt_filename = filename.replace(".pdf", "_Updated.pdf")
         print(f"Warning: {filename} is open/locked in another program. Saving to {alt_filename} instead.")
+        story2_alt = generate_story(styles, pass_idx=2)
         doc2 = SimpleDocTemplate(
             alt_filename,
             pagesize=A4,
@@ -1450,7 +1451,7 @@ def generate_pdf(filename="ChronoLens_Project_Report.pdf"):
             topMargin=TOP_MARGIN,
             bottomMargin=BOTTOM_MARGIN
         )
-        doc2.build(story2, canvasmaker=UniversityCanvas)
+        doc2.build(story2_alt, canvasmaker=UniversityCanvas)
         filename = alt_filename
     
     if os.path.exists("temp_pass1.pdf"):
