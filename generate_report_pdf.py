@@ -312,8 +312,8 @@ def generate_story(styles, pass_idx):
     
     group_data = [
         [Paragraph("<b>SL No</b>", styles['TableHead']), Paragraph("<b>NAME</b>", styles['TableHead']), Paragraph("<b>USN</b>", styles['TableHead']), Paragraph("<b>RESPONSIBILITY</b>", styles['TableHead'])],
-        [Paragraph("1", styles['TableCell']), Paragraph("<b>HRIDAY</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("System Architecture & Integration", styles['TableCell'])],
-        [Paragraph("2", styles['TableCell']), Paragraph("<b>JITESH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Backend Development & Comparison Logic", styles['TableCell'])],
+        [Paragraph("1", styles['TableCell']), Paragraph("<b>HRIDAY</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("System Architecture & Module Integration", styles['TableCell'])],
+        [Paragraph("2", styles['TableCell']), Paragraph("<b>JITESH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Event Data Extraction & Comparison Logic", styles['TableCell'])],
         [Paragraph("3", styles['TableCell']), Paragraph("<b>KHUSH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Website Design & User Interface", styles['TableCell'])],
         [Paragraph("4", styles['TableCell']), Paragraph("<b>JATHIN</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Data Collection & Topic Research", styles['TableCell'])],
         [Paragraph("5", styles['TableCell']), Paragraph("<b>HEMANT</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("System Testing & Result Verification", styles['TableCell'])],
