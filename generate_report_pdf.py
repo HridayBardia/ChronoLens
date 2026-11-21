@@ -312,12 +312,12 @@ def generate_story(styles, pass_idx):
     
     group_data = [
         [Paragraph("<b>SL No</b>", styles['TableHead']), Paragraph("<b>NAME</b>", styles['TableHead']), Paragraph("<b>USN</b>", styles['TableHead']), Paragraph("<b>RESPONSIBILITY</b>", styles['TableHead'])],
-        [Paragraph("1", styles['TableCell']), Paragraph("<b>HRIDAY (Lead)</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Project Lead, Overall Architecture, FastAPI Backend & Integration", styles['TableCell'])],
-        [Paragraph("2", styles['TableCell']), Paragraph("<b>JITESH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Wikidata SPARQL Engine & Entity Resolution Development", styles['TableCell'])],
-        [Paragraph("3", styles['TableCell']), Paragraph("<b>KHUSH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Wikipedia RAG Pipeline & Context Extraction Service", styles['TableCell'])],
-        [Paragraph("4", styles['TableCell']), Paragraph("<b>JATHIN</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Pydantic v2 Schema Modeling & LLM Synthesis Engine", styles['TableCell'])],
-        [Paragraph("5", styles['TableCell']), Paragraph("<b>HEMANT</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Next.js Frontend Workstation UI & Responsive Component Design", styles['TableCell'])],
-        [Paragraph("6", styles['TableCell']), Paragraph("<b>RAJESH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Test Suite (Pytest/Jest), Evaluation Benchmarks & Cloud Deployment", styles['TableCell'])],
+        [Paragraph("1", styles['TableCell']), Paragraph("<b>HRIDAY (Lead)</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Project Lead, Backend Development & Integration", styles['TableCell'])],
+        [Paragraph("2", styles['TableCell']), Paragraph("<b>JITESH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Wikidata Research & Date Extraction", styles['TableCell'])],
+        [Paragraph("3", styles['TableCell']), Paragraph("<b>KHUSH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Wikipedia Context & Historical Data Collection", styles['TableCell'])],
+        [Paragraph("4", styles['TableCell']), Paragraph("<b>JATHIN</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("AI Prompting & Data Structuring", styles['TableCell'])],
+        [Paragraph("5", styles['TableCell']), Paragraph("<b>HEMANT</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Frontend Design, UI Layout & Timelines", styles['TableCell'])],
+        [Paragraph("6", styles['TableCell']), Paragraph("<b>RAJESH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Testing, Accuracy Evaluation & Report Documentation", styles['TableCell'])],
     ]
     t_group = Table(group_data, colWidths=[35, 105, 95, 252], rowHeights=[22, 26, 26, 26, 26, 26, 26])
     t_group.setStyle(TableStyle([
