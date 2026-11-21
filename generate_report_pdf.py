@@ -312,12 +312,12 @@ def generate_story(styles, pass_idx):
     
     group_data = [
         [Paragraph("<b>SL No</b>", styles['TableHead']), Paragraph("<b>NAME</b>", styles['TableHead']), Paragraph("<b>USN</b>", styles['TableHead']), Paragraph("<b>RESPONSIBILITY</b>", styles['TableHead'])],
-        [Paragraph("1", styles['TableCell']), Paragraph("<b>HRIDAY (Lead)</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Team Leader & Project Coordination", styles['TableCell'])],
-        [Paragraph("2", styles['TableCell']), Paragraph("<b>JITESH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Core Logic & Backend Development", styles['TableCell'])],
-        [Paragraph("3", styles['TableCell']), Paragraph("<b>KHUSH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Frontend & UI Design", styles['TableCell'])],
-        [Paragraph("4", styles['TableCell']), Paragraph("<b>JATHIN</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Requirement Gathering & Data Collection", styles['TableCell'])],
-        [Paragraph("5", styles['TableCell']), Paragraph("<b>HEMANT</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("System Testing & Quality Check", styles['TableCell'])],
-        [Paragraph("6", styles['TableCell']), Paragraph("<b>RAJESH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Documentation & Final Report", styles['TableCell'])],
+        [Paragraph("1", styles['TableCell']), Paragraph("<b>HRIDAY (Lead)</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Project Lead & Backend Setup", styles['TableCell'])],
+        [Paragraph("2", styles['TableCell']), Paragraph("<b>JITESH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Event Data Fetching & Comparison Logic", styles['TableCell'])],
+        [Paragraph("3", styles['TableCell']), Paragraph("<b>KHUSH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Website Design & User Interface", styles['TableCell'])],
+        [Paragraph("4", styles['TableCell']), Paragraph("<b>JATHIN</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Data Collection & Topic Research", styles['TableCell'])],
+        [Paragraph("5", styles['TableCell']), Paragraph("<b>HEMANT</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("System Testing & Result Verification", styles['TableCell'])],
+        [Paragraph("6", styles['TableCell']), Paragraph("<b>RAJESH</b>", styles['TableCell']), Paragraph("", styles['TableCell']), Paragraph("Project Report & Documentation", styles['TableCell'])],
     ]
     t_group = Table(group_data, colWidths=[35, 105, 95, 252], rowHeights=[22, 26, 26, 26, 26, 26, 26])
     t_group.setStyle(TableStyle([
